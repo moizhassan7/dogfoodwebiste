@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+                montys: {
+                    green: {
+                        DEFAULT: '#0a3c30',
+                        light: '#1c6857',
+                        dark: '#072722'
+                    },
+                    coral: '#f97f6a',
+                    beige: '#f5f2e9',
+                    cream: '#fdfaf1'
+                }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -89,7 +100,10 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+			},
+            fontFamily: {
+                'montys': ['Montserrat', 'sans-serif'],
+            }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

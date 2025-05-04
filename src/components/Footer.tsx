@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Facebook, Twitter, Instagram, Mail, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
 const Footer = () => {
-  return (
-    <footer className="bg-montys-green text-white pt-8 pb-4">
+  return <footer className="bg-montys-green text-white pt-8 pb-4">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <p className="mb-4">
@@ -54,16 +51,12 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-white/20">
           <div className="mb-4 md:mb-0">
-            <img 
-              src="/public/lovable-uploads/a53b26f4-d467-4a8e-8091-92481d7a5baa.png" 
-              alt="Monty's Larder" 
-              className="h-16"
-            />
+            <img src="/public/lovable-uploads/a53b26f4-d467-4a8e-8091-92481d7a5baa.png" alt="Monty's Larder" className="h-16" />
           </div>
           
           <div className="text-center md:text-left mb-4 md:mb-0">
-            <p className="text-sm">© 2023 Monty's Larder. Made by hand with ♥</p>
-            <p className="text-xs mt-1">Website by Love Internet</p>
+            <p className="text-sm">© 2025 Monty's Larder. Made by hand with ♥</p>
+            <p className="text-xs mt-1">Website by Moiz Hassan</p>
           </div>
           
           <div className="flex space-x-4">
@@ -79,8 +72,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

@@ -51,7 +51,7 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-white/20">
           <div className="mb-4 md:mb-0">
-            <img src="/public/lovable-uploads/a53b26f4-d467-4a8e-8091-92481d7a5baa.png" alt="Monty's Larder" className="h-16" />
+            <img alt="Monty's Larder" className="h-16" src="https://cdn-icons-png.flaticon.com/512/91/91534.png" />
           </div>
           
           <div className="text-center md:text-left mb-4 md:mb-0">

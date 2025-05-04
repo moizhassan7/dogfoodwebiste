@@ -1,17 +1,12 @@
-
 import React, { useState } from 'react';
 import { ShoppingCart, User, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  return (
-    <header>
+  return <header>
       {/* Promotion Bar */}
       <div className="bg-montys-green text-white text-center p-2 text-sm">
         <span className="mr-2">GET 20% OFF YOUR FIRST ORDER</span>
@@ -29,17 +24,13 @@ const Header = () => {
         <div className="container mx-auto flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="block">
-            <img 
-              src="/public/lovable-uploads/a53b26f4-d467-4a8e-8091-92481d7a5baa.png" 
-              alt="Monty's Larder" 
-              className="h-16"
-            />
+            <img alt="Monty's Larder" className="h-16" src="https://cdn-icons-png.flaticon.com/512/91/91534.png" />
           </Link>
           
           {/* Contact Info - Desktop */}
           <div className="hidden md:block text-white text-sm">
             <p>01747 859911</p>
-            <p>Mon - Fri 9am - 5:30pm / Sat-Sun: 10am</p>
+            <p className="font-normal my-0 px-0 text-base text-center">Mon - Fri 9am - 5:30pm / Sat-Sun: 10am</p>
           </div>
           
           {/* User & Cart - Desktop */}
@@ -102,8 +93,6 @@ const Header = () => {
           </div>
         </div>
       </nav>
-    </header>
-  );
+    </header>;
 };
-
 export default Header;

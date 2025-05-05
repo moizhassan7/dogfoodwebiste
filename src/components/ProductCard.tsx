@@ -20,16 +20,16 @@ const ProductCard: React.FC<ProductCardProps> = ({ title, image, description, pr
       <h3 className="text-xl font-semibold mt-4 mb-2">{title}</h3>
       <p className="text-sm text-center mb-4">{description}</p>
       <div className="grid grid-cols-3 gap-2 w-full max-w-xs">
-        <div className="bg-montys-beige rounded-md p-2 text-center">
-          <p className="font-bold text-montys-green">{prices.small.weight}</p>
+        <div className="bg-montys-beige rounded-md p-2 text-center hover:bg-montys-green hover:text-white">
+          <p className="font-bold  hover:bg-montys-green hover:text-white">{prices.small.weight}</p>
           <p className="text-xs">{prices.small.price}</p>
         </div>
-        <div className="bg-montys-beige rounded-md p-2 text-center">
-          <p className="font-bold text-montys-green">{prices.medium.weight}</p>
+        <div className="bg-montys-beige rounded-md p-2 text-center hover:bg-montys-green hover:text-white">
+          <p className="font-bold">{prices.medium.weight}</p>
           <p className="text-xs">{prices.medium.price}</p>
         </div>
-        <div className="bg-montys-beige rounded-md p-2 text-center">
-          <p className="font-bold text-montys-green">{prices.large.weight}</p>
+        <div className="bg-montys-beige rounded-md p-2 text-center hover:bg-montys-green hover:text-white">
+          <p className="font-bold hover:bg-montys-green hover:text-white">{prices.large.weight}</p>
           <p className="text-xs">{prices.large.price}</p>
         </div>
       </div>

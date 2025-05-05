@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
           
           <div className="text-center md:text-left mb-4 md:mb-0">
-            <p className="text-sm">© 2025 Monty's Larder. Made by hand with ♥</p>
+            <p className="text-sm">© 2025. All right reserved.</p>
             <p className="text-xs mt-1">Website by Moiz Hassan</p>
           </div>
           

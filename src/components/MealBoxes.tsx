@@ -1,25 +1,25 @@
 
 import React from 'react';
 import MealBox from './MealBox';
-
+import mealboximg from "./img/montys-box.png"
 const MealBoxes = () => {
   const mealBoxes = [
     {
       id: 1,
       title: 'Beef Meal Box',
-      image: 'https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?auto=format&fit=crop&w=300&q=80',
+      image: mealboximg,
       description: 'Our all beef meal box - 14 days worth - contains Monty\'s Larder Beef Casserole meals and will feed your dog by up to 14 days.',
     },
     {
       id: 2,
       title: 'Mixed Meal Box',
-      image: 'https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?auto=format&fit=crop&w=300&q=80',
+      image: mealboximg,
       description: 'Our mixed box with 14 days of meals - contains Monty\'s Larder Beef Casserole meals and 7 Fish Pie meals and will last up to 14 days.',
     },
     {
       id: 3,
       title: 'Starter Box',
-      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&q=80',
+      image: mealboximg,
       description: 'Our starter box is the perfect introduction and will allow you to switch your dog over in 14-day period by using Monty\'s meals with their existing food.',
     },
   ];

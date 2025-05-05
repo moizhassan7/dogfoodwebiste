@@ -1,12 +1,17 @@
+
 import React, { useState } from 'react';
 import { ShoppingCart, User, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  return <header>
+  
+  return (
+    <header>
       {/* Promotion Bar */}
       <div className="bg-montys-green text-white text-center p-2 text-sm">
         <span className="mr-2">GET 20% OFF YOUR FIRST ORDER</span>
@@ -38,10 +43,10 @@ const Header = () => {
             <button className="text-white">
               <User size={20} />
             </button>
-            <button className="text-white flex items-center">
+            <Link to="/checkout" className="text-white flex items-center">
               <ShoppingCart size={20} />
-              <span className="bg-montys-coral rounded-full w-5 h-5 flex items-center justify-center text-xs text-white ml-1">0</span>
-            </button>
+              <span className="bg-montys-coral rounded-full w-5 h-5 flex items-center justify-center text-xs text-white ml-1">1</span>
+            </Link>
           </div>
           
           {/* Mobile Menu Button */}
@@ -73,6 +78,7 @@ const Header = () => {
               <li className="py-2"><Link to="/how-it-works" className="block" onClick={toggleMenu}>HOW IT WORKS</Link></li>
               <li className="py-2"><Link to="/why-feed-fresh" className="block" onClick={toggleMenu}>WHY FEED FRESH</Link></li>
               <li className="py-2"><Link to="/about" className="block" onClick={toggleMenu}>ABOUT</Link></li>
+              <li className="py-2"><Link to="/checkout" className="block" onClick={toggleMenu}>CHECKOUT</Link></li>
               
               {/* Mobile Contact & User */}
               <li className="py-2 mt-2 border-t border-montys-green">
@@ -84,15 +90,17 @@ const Header = () => {
                   <User size={20} />
                   <span className="ml-2">Account</span>
                 </button>
-                <button className="text-white flex items-center">
+                <Link to="/checkout" className="text-white flex items-center">
                   <ShoppingCart size={20} />
-                  <span className="ml-2">Cart (0)</span>
-                </button>
+                  <span className="ml-2">Cart (1)</span>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    </header>;
+    </header>
+  );
 };
+
 export default Header;

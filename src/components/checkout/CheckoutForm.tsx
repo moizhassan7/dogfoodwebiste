@@ -199,9 +199,9 @@ const CheckoutForm = () => {
             <RadioGroupItem value="card" id="card" />
             <Label htmlFor="card" className="ml-2">Credit/Debit Cards</Label>
             <div className="ml-auto flex gap-1">
-              <img src="https://cdn.shopify.com/s/files/1/0266/1371/2059/files/amex_68x43_e96e358c-4e7a-42e7-be86-716538ea443d_x32.png?v=1614116468" alt="Amex" className="h-6" />
-              <img src="https://cdn.shopify.com/s/files/1/0266/1371/2059/files/visa_68x43_5dd0e643-35c9-416c-8ef5-36eff410b6e7_x32.png?v=1614116471" alt="Visa" className="h-6" />
-              <img src="https://cdn.shopify.com/s/files/1/0266/1371/2059/files/mastercard_68x43_cb187ee3-47ef-491c-8225-ab1a25daf942_x32.png?v=1614116469" alt="Mastercard" className="h-6" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1024px-American_Express_logo_%282018%29.svg.png" alt="Amex" className="h-6" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Visa_2021.svg/1920px-Visa_2021.svg.png" alt="Visa" className="h-6" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/1920px-Mastercard_2019_logo.svg.png" alt="Mastercard" className="h-6" />
             </div>
           </div>
           

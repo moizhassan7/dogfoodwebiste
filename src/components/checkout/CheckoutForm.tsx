@@ -166,13 +166,15 @@ const CheckoutForm = () => {
       <section className="bg-white p-6 rounded shadow-sm">
         <h2 className="text-lg font-bold mb-4 text-left uppercase">Delivery</h2>
         
-        <div className="flex items-center justify-between">
-          <div className="flex items-center">
-            <RadioGroupItem value="standard" id="standard" checked />
-            <Label htmlFor="standard" className="ml-2">Standard Delivery</Label>
+        <RadioGroup defaultValue="standard">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center">
+              <RadioGroupItem value="standard" id="standard" />
+              <Label htmlFor="standard" className="ml-2">Standard Delivery</Label>
+            </div>
+            <span className="font-medium">£3.95</span>
           </div>
-          <span className="font-medium">£3.95</span>
-        </div>
+        </RadioGroup>
       </section>
       
       {/* Order Notes */}

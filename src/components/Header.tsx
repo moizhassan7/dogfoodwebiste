@@ -2,9 +2,11 @@
 import React, { useState } from 'react';
 import { ShoppingCart, User, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useCart } from '@/contexts/CartContext';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { totalItems } = useCart();
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -45,7 +47,9 @@ const Header = () => {
             </button>
             <Link to="/checkout" className="text-white flex items-center">
               <ShoppingCart size={20} />
-              <span className="bg-montys-coral rounded-full w-5 h-5 flex items-center justify-center text-xs text-white ml-1">1</span>
+              <span className="bg-montys-coral rounded-full w-5 h-5 flex items-center justify-center text-xs text-white ml-1">
+                {totalItems}
+              </span>
             </Link>
           </div>
           
@@ -92,7 +96,7 @@ const Header = () => {
                 </button>
                 <Link to="/checkout" className="text-white flex items-center">
                   <ShoppingCart size={20} />
-                  <span className="ml-2">Cart (1)</span>
+                  <span className="ml-2">Cart ({totalItems})</span>
                 </Link>
               </li>
             </ul>

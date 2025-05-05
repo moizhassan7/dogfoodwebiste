@@ -1,21 +1,29 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Lock } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CheckoutForm from '../components/checkout/CheckoutForm';
 import BasketSummary from '../components/checkout/BasketSummary';
 import PromoBanner from '../components/checkout/PromoBanner';
+import { useCart } from '@/contexts/CartContext';
 
 const Checkout = () => {
-  const [orderTotal, setOrderTotal] = useState(13.85);
+  const { subtotal } = useCart();
+  const [orderTotal, setOrderTotal] = useState(subtotal + 3.95); // Subtotal + shipping
   const [minimumOrder] = useState(25.00);
   const [isValidOrder, setIsValidOrder] = useState(false);
 
+  // Check if cart meets minimum requirement on component mount
+  useEffect(() => {
+    checkOrderValidity(orderTotal);
+  }, [orderTotal]);
+
   // Check if order meets minimum requirement
   const checkOrderValidity = (total: number) => {
-    setIsValidOrder(total >= minimumOrder);
-    return total >= minimumOrder;
+    const isValid = total >= minimumOrder;
+    setIsValidOrder(isValid);
+    return isValid;
   };
 
   return (

@@ -147,11 +147,11 @@ const BasketSummary = ({ orderTotal, setOrderTotal, checkOrderValidity }: Basket
       
       {/* Payment options */}
       <div className="mt-6 flex flex-wrap gap-2 justify-center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Visa_2021.svg/1920px-Visa_2021.svg.png" alt="Visa" className="h-6" />
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/1920px-Mastercard_2019_logo.svg.png" alt="Mastercard" className="h-6" />
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/PayPal_2024.svg/1920px-PayPal_2024.svg.png" alt="PayPal" className="h-6" />
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Google_Pay_Logo.svg/1920px-Google_Pay_Logo.svg.png" alt="Google Pay" className="h-6" />
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Apple_Pay_logo.svg/1920px-Apple_Pay_logo.svg.png" alt="Apple Pay" className="h-6" />
+        <img src="https://cdn.shopify.com/s/files/1/0266/1371/2059/files/visa_68x43_5dd0e643-35c9-416c-8ef5-36eff410b6e7_x32.png?v=1614116471" alt="Visa" className="h-6" />
+        <img src="https://cdn.shopify.com/s/files/1/0266/1371/2059/files/mastercard_68x43_cb187ee3-47ef-491c-8225-ab1a25daf942_x32.png?v=1614116469" alt="Mastercard" className="h-6" />
+        <img src="https://cdn.shopify.com/s/files/1/0266/1371/2059/files/paypal_68x43_197d57d3-c680-4edf-98f9-92bfbce7a215_x32.png?v=1614116470" alt="PayPal" className="h-6" />
+        <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e.svg" alt="Google Pay" className="h-6" />
+        <img src="https://cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c484e2bd45d501b681e9d67d0a24d3947f7ac0462443b43064f5b.svg" alt="Apple Pay" className="h-6" />
       </div>
       
       {/* Security message */}

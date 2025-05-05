@@ -79,19 +79,37 @@ const ProductCard: React.FC<ProductCardProps> = ({ title, image, description, pr
       <img src={image} alt={title} className="w-40 h-40 object-cover" />
       <h3 className="text-xl font-semibold mt-4 mb-2">{title}</h3>
       <p className="text-sm text-center mb-4">{description}</p>
-      <div className="grid grid-cols-3 gap-2 w-full max-w-xs">
-        <div className="bg-montys-beige rounded-md p-2 text-center">
-          <p className="font-bold text-montys-green">{prices.small.weight}</p>
-          <p className="text-xs">{prices.small.price}</p>
-        </div>
-        <div className="bg-montys-beige rounded-md p-2 text-center">
-          <p className="font-bold text-montys-green">{prices.medium.weight}</p>
-          <p className="text-xs">{prices.medium.price}</p>
-        </div>
-        <div className="bg-montys-beige rounded-md p-2 text-center">
-          <p className="font-bold text-montys-green">{prices.large.weight}</p>
-          <p className="text-xs">{prices.large.price}</p>
-        </div>
+      
+      <div className="w-full max-w-xs mb-4">
+        <RadioGroup 
+          value={selectedWeight || ""}
+          onValueChange={handleWeightSelect}
+          className="grid grid-cols-3 gap-2 w-full"
+        >
+          <div className={`bg-montys-beige rounded-md p-2 text-center cursor-pointer ${selectedWeight === prices.small.weight ? 'ring-2 ring-montys-green' : ''}`}>
+            <RadioGroupItem value={prices.small.weight} id={`${id}-small`} className="sr-only" />
+            <Label htmlFor={`${id}-small`} className="cursor-pointer w-full h-full">
+              <p className="font-bold text-montys-green">{prices.small.weight}</p>
+              <p className="text-xs">{prices.small.price}</p>
+            </Label>
+          </div>
+          
+          <div className={`bg-montys-beige rounded-md p-2 text-center cursor-pointer ${selectedWeight === prices.medium.weight ? 'ring-2 ring-montys-green' : ''}`}>
+            <RadioGroupItem value={prices.medium.weight} id={`${id}-medium`} className="sr-only" />
+            <Label htmlFor={`${id}-medium`} className="cursor-pointer w-full h-full">
+              <p className="font-bold text-montys-green">{prices.medium.weight}</p>
+              <p className="text-xs">{prices.medium.price}</p>
+            </Label>
+          </div>
+          
+          <div className={`bg-montys-beige rounded-md p-2 text-center cursor-pointer ${selectedWeight === prices.large.weight ? 'ring-2 ring-montys-green' : ''}`}>
+            <RadioGroupItem value={prices.large.weight} id={`${id}-large`} className="sr-only" />
+            <Label htmlFor={`${id}-large`} className="cursor-pointer w-full h-full">
+              <p className="font-bold text-montys-green">{prices.large.weight}</p>
+              <p className="text-xs">{prices.large.price}</p>
+            </Label>
+          </div>
+        </RadioGroup>
       </div>
       
       {error && <p className="text-red-500 text-sm mb-2">{error}</p>}

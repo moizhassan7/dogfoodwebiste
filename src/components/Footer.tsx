@@ -55,26 +55,18 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-white/20">
-          <div className="mb-4 md:mb-0">
-            <img alt="Monty's Larder" className="h-16" src="https://cdn-icons-png.flaticon.com/512/91/91534.png" />
-          </div>
-          
-          <div className="text-center md:text-left mb-4 md:mb-0">
-            <p className="text-sm">© 2025 Monty's Larder. Made by hand with ♥</p>
-            <p className="text-xs mt-1">Website by Moiz Hassan</p>
-          </div>
-          
-          <div className="flex space-x-4">
-            <a href="https://facebook.com" className="hover:text-montys-coral transition-colors" aria-label="Facebook">
-              <Facebook size={20} />
-            </a>
-            <a href="https://twitter.com" className="hover:text-montys-coral transition-colors" aria-label="Twitter">
-              <Twitter size={20} />
-            </a>
-            <a href="https://instagram.com" className="hover:text-montys-coral transition-colors" aria-label="Instagram">
-              <Instagram size={20} />
-            </a>
+        {/* Copyright Footer */}
+        <div className="py-4 text-center text-sm border-t border-white/10">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="mb-2 md:mb-0">
+              <Link to="/terms" className="hover:underline mx-2">Terms & Conditions</Link>
+              <span className="mx-2">|</span>
+              <Link to="/privacy" className="hover:underline mx-2">Privacy Notice</Link>
+            </div>
+            
+            <div>
+              <p>© 2025, Monty's Larder. All rights reserved.</p>
+            </div>
           </div>
         </div>
       </div>

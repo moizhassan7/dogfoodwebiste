@@ -1,16 +1,13 @@
 
 import React from 'react';
 import ProductCard from './ProductCard';
-import beefimg from "./img/cassarolenew.png"
-import cottoagepie from "./img/cottage.png"
-import lambhotpot from "./img/lambnew.png"
-import fishpie from "./img/fishpie-2.png"
+
 const Products = () => {
   const products = [
     {
       id: 1,
       title: 'Beef Casserole',
-      image: beefimg,
+      image: 'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=300&q=80',
       description: 'Combines Tasty Red Meat, Carrots and Root Veg With Broccoli, Carrots, And Spinach',
       prices: {
         small: { weight: '400G', price: '£4.50' },
@@ -21,7 +18,7 @@ const Products = () => {
     {
       id: 2,
       title: 'Cottage Pie',
-      image: cottoagepie,
+      image: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=300&q=80',
       description: 'Blends Tasty Red Meat Topped With Potatoes Mixed Vegetables And Cheese',
       prices: {
         small: { weight: '400G', price: '£4.50' },
@@ -32,7 +29,7 @@ const Products = () => {
     {
       id: 3,
       title: 'Lamb Hotpot',
-      image: lambhotpot,
+      image: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=300&q=80',
       description: 'Combines Juicy Lamb Pieces With Mixed Vegetables Studded With Sweet Potatoes',
       prices: {
         small: { weight: '400G', price: '£4.50' },
@@ -43,7 +40,7 @@ const Products = () => {
     {
       id: 4,
       title: 'Fish Pie',
-      image: fishpie  ,
+      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&q=80',
       description: 'Combines A Selection Of White Fish And Salmon With Potato And Fresh Vegetables',
       prices: {
         small: { weight: '400G', price: '£4.50' },

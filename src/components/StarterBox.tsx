@@ -8,7 +8,7 @@ const StarterBox = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <img 
-              src="https://images.unsplash.com/photo-1598134493179-51332e56807f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+              src="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?auto=format&fit=crop&w=600&q=80" 
               alt="Starter Box" 
               className="rounded-lg shadow-lg mx-auto"
             />
